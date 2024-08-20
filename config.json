@@ -1,0 +1,32 @@
+{
+    "port": 3834,
+    "project_name": "wolffun",
+    "telegram_token": "7451927961:AAHDkJxKKRO72gT-DbcLWJaS0c03zMbl7iQ",
+    "tele_bot_link": "t.me/WoffyWoffy_bot",
+    "tele_bot_welcome_image": "https://blockchain-service.s3.ap-southeast-1.amazonaws.com/grafilab_tg_game/images/banner-tg.png",
+    "wolffun_game_app_url": "https://tg-app.wolffun.io",
+    "wolffun_game_api_url": "https://tg-api.wolffun.io",
+    "wolffun_game_privacy_policy_url": "https://wolffun.io/privacy-policy",
+    "database": {
+        "mysql": {
+            "dbName": "wolffun_local",
+            "dbUser": "root",
+            "dbPassword": "12345",
+            "host": "localhost",
+            "dialect": "mysql",
+            "logging": false,
+            "pool": {
+                "max": 100,
+                "min": 0,
+                "acquire": 1000000
+            }
+        }
+    },
+    "jwt_secret": "c30b8bd2e70496c9dd9b48ed0eaeff4de632e79e8214b62e90ed0a13488739f35cb87ce0dfea5ee0782c8ac9ebb4026e71c250bc9bfc801056168e71ea5dc882",
+    "jwt_exp": 60,
+    "crypto": {
+        "secret": "18ab4295264ce364f3aff480e4fddbb3e239a664567d5d249ee62b846aa61b88170a29b499141b491ef19077021fa831aac2004d172c87e41abd1b98fee7a526",
+        "fe_secret": "7ee6b30200a545254002aa9ef0d9e59e2bd9d6676a214dcbe6f5bcf2bd6f08ea3fab0851e3a8935d8a3e2c0188d0ce667dfa1561ccf13d89c1c015b4f0315038"
+    },
+    "sessionSecret": "01ef06afec6c38ac52d234aa47048b8f5c4704d610d105db7512fb0d1507cdfa"
+}
