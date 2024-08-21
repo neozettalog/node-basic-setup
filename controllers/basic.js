@@ -3,7 +3,7 @@ const router = express.Router()
 const { authenticateJWT } = require('../helpers/auth_helper');
 
 //Get with JWT Authenticate
-router.get('/', authenticateJWT, async (req, res) => {
+router.get('/auth', authenticateJWT, async (req, res) => {
     const user_id = req.user.id;
     try {
         return res.json({
@@ -24,7 +24,7 @@ router.get('/', authenticateJWT, async (req, res) => {
 
 
 //Get with NO JWT Authenticate
-router.get('/', async (req, res) => {
+router.get('/noauth', async (req, res) => {
     try {
         return res.json({
             "data": "NO JWT Authenticate",
@@ -41,3 +41,5 @@ router.get('/', async (req, res) => {
         });
     }
 });
+
+module.exports = router;
